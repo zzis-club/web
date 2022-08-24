@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="js.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<meta charset="utf-8">
+<title>胖子的個人網站</title>
+<script>
+// 上滑
+
+    $(function(){
+        $('#BackTop').click(function(){ 
+            $('html,body').animate({scrollTop:0}, 333);
+        });
+        $(window).scroll(function() {
+            if ( $(this).scrollTop() > 1 ){
+                $('#BackTop').fadeIn(222);
+            } else {
+                $('#BackTop').stop().fadeOut(222);
+            }
+        }).scroll();
+    });
+// 開啟收回
+$(document).ready(function(){$("#oabout").click(function(){$("#about").slideDown("slow")})})
+$(document).ready(function(){$("#cabout").click(function(){$("#about").slideUp("slow")})})
+$(document).ready(function(){$("#ohistory").click(function(){$("#history").slideDown("slow")})})
+$(document).ready(function(){$("#chistory").click(function(){$("#history").slideUp("slow")})})
+$(document).ready(function(){$("#ocode").click(function(){$("#code").slideDown("slow")})})
+$(document).ready(function(){$("#ccode").click(function(){$("#code").slideUp("slow")})})
+$(document).ready(function(){$("#ocon").click(function(){$("#con").slideDown("slow")})})
+$(document).ready(function(){$("#ccon").click(function(){$("#con").slideUp("slow")})})
+$(document).ready(function(){$("#olist").click(function(){$("#list").slideDown("slow")})})
+$(document).ready(function(){$("#clist").click(function(){$("#list").slideUp("slow")})})
+// 顏色
+
+</script>
+</script>
+</head>
+<body>
+<div class="in">
+<!-- 上面的東西 -->
+<div class="title" style="background-color: springgreen;";>
+<p>胖子的個人網站</p>
+</div>
+<!-- 上面的東西 結束 -->
+<button class="b" id="oabout">關於我</button><br>
+<div class="inside" id="about">一個超胖的人(超過100kg)，目前就讀於台北市立中正高中<br>喜歡寫程式、吃東西、睡覺、看vtuber<br>非常不擅長美術(這個ui應該就看得出來了)、國文(這篇文章應該也看得出來)<br><br>喜歡的科目:英文、數學、自然、社會(尤其是歷史)、多元選修<br>不喜歡的科目:國文、美術<br>
+<button id="cabout">關閉</button><br>
+</div>
+<br>
+<button class="b" id="ohistory">個人經歷</button><br>
+<div class="inside" id="history">國一:圖書股長<br>國二:體育股長、資訊股長<br>國三:衛生股長<br>高一:資訊股長<br>虛擬世界:minecraft 爆炸公會 WD分會 會長(曾經)<br>minecraft WD伺服器 活動人員<br>minecraft WD伺服器 實習技術人員(曾經)<br>minecraft 炸蝦伺服器 活動人員<br>
+<button id="chistory">關閉</button><br>
+</div>
+<br>
+<button class="b" id="ocode">會使用的語言</button><br>
+<div class="inside" id="code">中文<br>ENGLISH<br>php<br>html<br>js(jquery)<br>css(會但不會適當運用)<br>sql<br>
+<button id="ccode">關閉</button><br>
+</div>
+<br>
+<button class="b" id="olist">作品列表</button><br>
+<div class="inside" id="list">
+{2021高一上自主學習}學生學習交流網站(非官方):<a href="http://211.72.92.93/">http://211.72.92.93/</a><br>
+{炸蝦伺服器}炸蝦伺服器官方網站(手機頁面):<a href=https://www.friedshrimp.ga/>https://www.friedshrimp.ga/</a><br>
+<button id="clist">關閉</button>
+</div>
+<br>
+<a href="post.html"><button class="b">胖子の混沌邏輯小領域</button></a>
+<br>
+<br>
+<button class="b" id="ocon">我的社群帳號</button><br>
+<div class="inside" id="con">discord:csc20060726#0278<br>twitter:@chiu_20060726<br>IG:chiu20060726<br>
+<button id="ccon">關閉</button>
+</div>
+
+<br>
+<!-- 下方的東西 -->
+</div>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<div class="down">
+胖子的個人網站<br>2022/01開始架設<br>於github page架設<br>© 2022 胖子<br>
+
+<!-- 下方的東西 結束 -->
+</div>
+</body>
+</html>
